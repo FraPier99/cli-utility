@@ -124,8 +124,7 @@ Al momento solo per 2024/2025 e 2023/2024
 
 ---
 
-## 📝 **Personalizza**
-Puoi aggiungere una sezione con **API usate**, **esempi di output** e **idee per il futuro**.
+
 
 ### 📌 **TODO**
 - (Prossimi miglioramenti WIP)
