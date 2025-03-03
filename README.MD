@@ -43,39 +43,6 @@ Chalk - Per migliorare la visualizzazione della CLI con colori e stili personali
 
 ---
 
-## 📥 **Installazione**
-1. **Clona il repository**  
-```bash
-git https://github.com/FraPier99/cli-utility.git
-
-```
-
-2. **Installa le dipendenze**
-```bash
-npm install
-```
-
-3. **Esegui il menu CLI**
-```bash
-node main.js
-```
-
----
-
-## 🚀 **Utilizzo**
-Una volta avviato `main.js`, il menu interattivo ti permette di scegliere tra diverse opzioni:  
-```
-📌 Seleziona un'operazione:
-> 🔐 Genera una password sicura
-  💱 Converti valuta (EUR -> altro)
-  ⚽ Cerca giornata Serie A
-  📅 Cerca giornate stagione X
-  ❌ Esci
-```
-Usa le **frecce ↑ ↓** per navigare e premi **INVIO** per eseguire lo script.
-
----
-
 ## 📌 **Dettaglio delle Funzionalità**
 ### 🔐 **Genera una password sicura**
 Questo script genera una password (lunghezza a scelta,*minima 8*) casuale sicura utilizzando `crypto.randomInt` per ottenere numeri casuali sicuri. Utilizza lettere in low/upper case, caratteri alfanumerici e simboli speciali. 
@@ -125,7 +92,42 @@ Al momento solo per 2024/2025 e 2023/2024
 ---
 
 
-### 📌 **TODO**
+## 📥 **Installazione**
+1. **Clona il repository**  
+```bash
+git https://github.com/FraPier99/cli-utility.git
+
+```
+
+2. **Installa le dipendenze**
+```bash
+npm install
+```
+
+3. **Esegui il menu CLI**
+```bash
+node main.js
+```
+
+---
+
+## 🚀 **Utilizzo**
+Una volta avviato `main.js`, il menu interattivo ti permette di scegliere tra diverse opzioni:  
+```
+📌 Seleziona un'operazione:
+> 🔐 Genera una password sicura
+  💱 Converti valuta (EUR -> altro)
+  ⚽ Cerca giornata Serie A
+  📅 Cerca giornate stagione X
+  ❌ Esci
+```
+Usa le **frecce ↑ ↓** per navigare e premi **INVIO** per eseguire lo script.
+
+---
+
+
+
+### 👍 **TODO**
 - (Prossimi miglioramenti WIP)
 
 
