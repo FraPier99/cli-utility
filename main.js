@@ -28,19 +28,19 @@ switch(scelta){
 
 
     case "🔐 Genera una password sicura":
-        execSync ("node generatore_password.js",{ stdio: "inherit" });
+        execSync ("node scripts/generatore_password.js",{ stdio: "inherit" });
         break;
 
     case "💱 Converti valuta (EUR -> altro)":
-       execSync ("node cambio_valuta.js", { stdio: "inherit" });
+       execSync ("node scripts/cambio_valuta.js", { stdio: "inherit" });
         break;
 
     case "⚽ Cerca giornata Serie A":
-        execSync ("node cercaGiornata.js", { stdio: "inherit" });
+        execSync ("node scripts/cercaGiornata.js", { stdio: "inherit" });
         break;
 
     case "📅 Cerca giornate stagione X":
-       execSync ("node cercaStagione.js", { stdio: "inherit" }) 
+       execSync ("node scripts/cercaStagione.js", { stdio: "inherit" }) 
        break
 
     case "❌ Esci":
