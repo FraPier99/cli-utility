@@ -72,6 +72,9 @@ rl.question('Scegli lunghezza password  ',function(num){
     }
     console.log('⬇️ -password creata ⬇️')
 console.log(chalk.bgGreen.black.bold(randomize(pass).join('')))
+console.log('controlla la sicurezza della password  qui:')
+console.log('https://haveibeenpwned.com/Passwords')
+
 rl.close()
 })
 

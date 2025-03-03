@@ -6,8 +6,8 @@ import path from "path";
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 
-
-
+// root principale
+const rootPath = process.cwd()
 
 const rl =  readLine.createInterface({
 
@@ -18,11 +18,9 @@ const rl =  readLine.createInterface({
 const createCsv = async (partite,n,stagione) =>{
     
 
-    // Create __filename and __dirname
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-    const folder_name = `partite_stagione_${stagione}`
-    const folderPath = path.join(__dirname,folder_name)
+
+    const folder_name = `partite_s_${stagione}`
+    const folderPath = path.join(rootPath, folder_name);
 
     try{
 
@@ -166,7 +164,7 @@ return
             }));
             console.log(`cerco la giornata n° ${n_giornata}`)
             console.log('ancora qualche secondo')
-            await new Promise(resolve => setTimeout(resolve, 10000)); // Aspetta 10 secondi
+            await new Promise(resolve => setTimeout(resolve, 10000)); // Aspetta  almeno 10 secondi - EVITA troppe richieste al s
             await createCsv(matches,n_giornata, stagione);
             console.log(`csv giornata n°${n_giornata} creato`)
             console.log('controlla la cartella')

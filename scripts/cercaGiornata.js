@@ -8,15 +8,35 @@ const rl = readline.createInterface({
     output:process.stdout
 })
 
-
+const rootPath = process.cwd()
 
 const createCsv = async (partite,giornata) =>{
 
-    const path = `partite_giornata_${giornata}-38.csv`;
+    const folder_name = `giornata_cercata`
+    const folderPath = path.join(rootPath,folder_name)
+ try{
+
+        if(!fs.existsSync( folderPath)){
+            fs.mkdirSync( folderPath, { recursive: true })
+      console.log(`cartella creata: ${folderPath}`)
+        }
+
+      
+        
+    }
+
+    catch(err){
+        console.error('Errore creazione cartella',err)
+        return 
+    }
+
+    const filePath= path.join(folderPath,`partite_giornata_${giornata}-38.csv`)
+
+    console.log(`📄 Salvando il file in: ${filePath}`);
 
 
     const csvWriter = createObjectCsvWriter({
-path:path,
+path:filePath,
 header:[ { id: 'numero', title: 'Numero' },
     { id: "date_time", title: "Data" },
     { id: "home_team_name", title: "Squadra Casa" },
