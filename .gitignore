@@ -1,0 +1,9 @@
+# Ignora la cartella delle dipendenze
+node_modules/
+
+# Ignora file di ambiente (per API keys, ecc.)
+.env
+
+# Ignora log e cache
+*.log
+.DS_Store
