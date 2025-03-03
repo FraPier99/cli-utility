@@ -2,6 +2,22 @@
 
 Un set di strumenti CLI per generare password, convertire valuta e cercare giornate di Serie A.
 
+## 📌 **Struttura del progetto**
+```
+📂 progetto-cli
+ ├── 📂 scripts               # Contiene gli script separati
+ │    ├── 📄 generatorePassword.js
+ │    ├── 📄 cambioValuta.js
+ │    ├── 📄 cercaGiornata.js
+ │    ├── 📄 cercaStagione.js
+ ├── 📄 main.js               # Menu interattivo con Inquirer
+ ├── 📄 .gitignore            # Esclude node_modules e .env
+ ├── 📄 package.json          # Gestione npm
+ ├── 📄 README.md             # Documentazione del progetto
+```
+
+---
+
 
 # 📌 Tecnologie utilizzate
 
@@ -46,7 +62,7 @@ node main.js
 
 ---
 
-## 🚀 **Come usare**
+## 🚀 **Utilizzo**
 Una volta avviato `main.js`, il menu interattivo ti permette di scegliere tra diverse opzioni:  
 ```
 📌 Seleziona un'operazione:
@@ -62,8 +78,8 @@ Usa le **frecce ↑ ↓** per navigare e premi **INVIO** per eseguire lo script.
 
 ## 📌 **Dettaglio delle Funzionalità**
 ### 🔐 **Genera una password sicura**
-Questo script genera una password casuale sicura utilizzando `crypto.randomInt` per ottenere numeri casuali sicuri. Utilizza caratteri alfanumerici e simboli speciali. L'utente può scegliere la lunghezza della password.
-Questo script genera una password casuale sicura utilizzando caratteri alfanumerici e simboli speciali. L'utente può scegliere la lunghezza della password.
+Questo script genera una password (lunghezza a scelta,*minima 8*) casuale sicura utilizzando `crypto.randomInt` per ottenere numeri casuali sicuri. Utilizza lettere in low/upper case, caratteri alfanumerici e simboli speciali. 
+
 
 1. Seleziona **"🔐 Genera una password sicura"** dal menu.
 2. Verrà generata una password casuale e mostrata a schermo.
@@ -107,23 +123,6 @@ Al momento solo per 2024/2025 e 2023/2024
 
 
 ---
-
-## 📌 **Struttura del progetto**
-```
-📂 progetto-cli
- ├── 📂 scripts               # Contiene gli script separati
- │    ├── 📄 generatorePassword.js
- │    ├── 📄 cambioValuta.js
- │    ├── 📄 cercaGiornata.js
- │    ├── 📄 cercaStagione.js
- ├── 📄 main.js               # Menu interattivo con Inquirer
- ├── 📄 .gitignore            # Esclude node_modules e .env
- ├── 📄 package.json          # Gestione npm
- ├── 📄 README.md             # Documentazione del progetto
-```
-
----
-
 
 
 ### 📌 **TODO**
